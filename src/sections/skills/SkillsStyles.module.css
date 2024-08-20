@@ -14,7 +14,7 @@
     line-height: 2;
     padding-left: 15px;
     padding-right: 15px;
-    max-width: 75ch;
+    max-width: 30ch;
 }
 
 hr {
@@ -32,4 +32,48 @@ span {
 .skillsContainer img {
     width: 20px;
     height: 20px;
+}
+
+@media(width >= 500px) {
+    hr {
+        max-width: 20rem;
+    }
+
+    .skillsContainer {
+        max-width: 50ch;
+    }
+}
+
+@media(width >= 600px) {
+    hr {
+        max-width: 25rem;
+    }
+
+    .skillsContainer {
+        max-width: 60ch;
+    }
+}
+
+@media(width >= 800px) {
+    .skillsContainer {
+        max-width: 70ch;
+        gap: 30px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    hr {
+        max-width: 30rem;
+        margin: 20px 0;
+    }
+    
+}
+
+@media(width >= 1200px){
+    .skillsContainer {
+        max-width: 85ch;
+        row-gap: 0;
+    }
 }

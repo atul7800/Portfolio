@@ -1,5 +1,5 @@
 import styles from "./HeroStyles.module.css";
-import heroImg from "../../assets/hero-img.png";
+import heroImg from "../../assets/hero-img.jpg";
 import sun from "../../assets/sun.svg";
 import moon from "../../assets/moon.svg";
 import twitterLight from "../../assets/twitter-light.svg";
@@ -41,23 +41,25 @@ function Hero() {
         </h1>
         <h2>Frontend Developer</h2>
         <span>
-          <a href="https://twitter.com/" target="_blank">
+          {/* <a href="https://twitter.com/" target="_blank">
             <img src={twitterIcon} alt="Twitter icon" />
-          </a>
-          <a href="https://github.com/" target="_blank">
+          </a> */}
+          <a
+            href="https://github.com/atul7800?tab=repositories/"
+            target="_blank"
+          >
             <img src={githubIcon} alt="Github icon" />
           </a>
-          <a href="https://linkedin.com/" target="_blank">
+          <a href="http://www.linkedin.com/in/atul-gupta24/" target="_blank">
             <img src={linkedinIcon} alt="Linkedin icon" />
           </a>
         </span>
         <p className={styles.description}>
-          With a passion for developing modern web applications for commercial
-          businesses.
+          With a passion for developing modern web applications for businesses.
         </p>
-        <a href={CV} download>
+        {/* <a href={CV} download>
           <button className="hover">Resume</button>
-        </a>
+        </a> */}
       </div>
     </section>
   );

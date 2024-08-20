@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./ProjectsStyles.module.css";
-import viberr from "../../assets/viberr.png";
-import hipsterGlasses from "../../assets/hipsster.png";
+import letmelogo from "../../assets/letmelogo.png";
+import techtalkcentral from "../../assets/techtalkcentral.png";
 import ProjectCard from "../../common/ProjectCard";
 
 function Projects() {
@@ -13,13 +13,13 @@ function Projects() {
           url="https://letmelogo.vercel.app/"
           name="LetMeLogo"
           descrption="A Logo Creation Tool"
-          image={viberr}
+          image={letmelogo}
         />
         <ProjectCard
           url="https://techtalkcentral.vercel.app/"
           name="TechTalkCentral"
           descrption="A Blog Website"
-          image={hipsterGlasses}
+          image={techtalkcentral}
         />
       </div>
     </section>

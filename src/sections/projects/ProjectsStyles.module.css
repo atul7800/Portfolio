@@ -8,6 +8,8 @@
     align-self: center;
     background-color: var(--project-card-bg);
     border-radius: 20px;
+    border: #888 1px solid;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
     margin-bottom: 5px;
   }
 
@@ -26,11 +28,34 @@
   a:hover {
     transform: scale(1.05);
   }
+}
 
+[data-theme="dark"] {
+  .container {
+    .img {
+      border: none;
+    }
+  }
+  
+}
+
+.projectContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+@media(width >= 500px) {
   .projectContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 35px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+
+@media(width >= 800px) {
+  .projectContainer {
+    row-gap: 50px;
   }
 }

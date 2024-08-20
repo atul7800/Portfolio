@@ -1,0 +1,8 @@
+.container{
+    text-align: center;
+
+    p {
+        color: var(--footer-text-color);
+        margin-top: 20px
+    }
+}

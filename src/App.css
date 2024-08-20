@@ -29,6 +29,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 60px;
+  font-family: "Roboto Mono", "monospace";
 }
 
 h1,
@@ -47,7 +48,7 @@ h1 {
 
 h2,
 h3,
-p {
+p, input, textarea, button {
   font-family: "Roboto Mono", "monospace";
 }
 
@@ -92,4 +93,54 @@ p {
 
 .hover:active {
   transform: translateY(5px);
+}
+
+@media (width >= 800px) {
+  h1{
+    font-size: 40px;
+  }
+
+  h2, h3 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .sectionTitle {
+    margin-bottom: 40px;
+  }
+
+  #contact .sectionTitle {
+    margin-top: 15px;
+  }
+
+  #skills .sectionTitle {
+    margin-bottom: 25px;
+    margin-top: 18px;
+  }
+
+  form .formGroup textarea {
+    font-size: 20px;
+  }
+  form .formGroup input:not([type='submit']) {
+    font-size: 20px;
+  }
+
+}
+
+@media (width >= 1400px) {
+  #root{
+    gap: 80px;
+  }
+
+  h1{
+    font-size: 48px;
+  }
+
+  .sectionTitle {
+    margin-bottom: 45px;
+  }
+
 }

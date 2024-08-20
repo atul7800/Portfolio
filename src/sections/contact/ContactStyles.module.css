@@ -9,12 +9,15 @@ form {
     flex-direction: column;
     align-items: center;
     gap: 30px;
+    
 }
 
 textarea, input:not([type='submit']) {
     height: 50px;
-    width: 250px;
+    width: 280px;
     padding-left: 15px;
+    padding-right: 10px;
+    font-size: 18px;
 }
 
 input[type='submit'] {
@@ -35,8 +38,43 @@ input, textarea{
     justify-self: center;
     background-color: var(--background-color);
     color: var(--form-text-color);
+    font-family: "Roboto Mono", "monospace";
 }
 
 ::placeholder{
     color: var(--form-text-color);
+}
+
+@media(width >= 450px) {
+    textarea, input:not([type='submit']) {
+        width: 400px;
+    }  
+}
+
+@media(width >= 600px) {
+    textarea, input:not([type='submit']) {
+        width: 450px;
+        font-size: 18px;
+    }  
+}
+
+@media(width >= 800px) {
+    textarea, input:not([type='submit']) {
+        width: 600px;
+        font-size: 20px;
+    }
+
+    input:not([type='submit']) {
+        height: 60px;
+    }
+
+    form {
+        gap: 40px;
+    }
+}
+
+@media(width >= 1400px) {
+    textarea, input:not([type='submit']) {
+        width: 800px;
+    }
 }

@@ -10,6 +10,7 @@
 
   .hero {
     max-width: 200px;
+    border-radius: 50%;
   }
 
   span {
@@ -80,4 +81,30 @@
   justify-content: center;
   flex-direction: column;
   gap: 25px;
+}
+
+@media(width >= 800px) {
+  .container {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+    max-height: 100vh;
+    gap: 50px;
+
+    .hero {
+      width: 350px;
+      max-width: 350px;
+    }
+  }
+}
+
+@media(width >= 1400px) {
+  .container {
+    gap: 75px;
+
+    .hero {
+      width: 375px;
+      max-width: 375px;
+    }
+  }
 }
