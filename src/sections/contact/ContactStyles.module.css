@@ -1,6 +1,7 @@
 .container{
     display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: center;
 }
 
@@ -45,10 +46,70 @@ input, textarea{
     color: var(--form-text-color);
 }
 
+
+.contactInfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+    max-width: 260px;
+    height: 70px;
+    margin-left: 10px;
+    flex-direction: column;
+    background-color: #222;
+    transform: skew(-10deg);
+    margin-bottom: 30px;
+}
+
+.contactInfo span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+
+.contactInfo span p {
+    font-size: 16px;
+}
+
+.contactInfo .phone img, .contactInfo .email img {
+    width: 22px;
+    height: 22px;
+}
+
+.contactInfo .emaiInfo a, .contactInfo p {
+    color: #fff;
+    text-align: center;
+    font-weight: 800;
+}
+
+[data-theme="dark"]{
+    .contactInfo .emaiInfo a, .contactInfo p {
+        color: #222;
+    }
+
+    .contactInfo {
+        background-color: #fff;
+    }
+
+}
+
+
 @media(width >= 450px) {
     textarea, input:not([type='submit']) {
         width: 400px;
     }  
+
+    .contactInfo {
+        max-width: 350px;
+        margin-left: 25px;
+        transform: skew(-20deg);
+    }
+
+    .contactInfo span p {
+        font-size: 18px;
+    }
 }
 
 @media(width >= 600px) {
@@ -56,6 +117,7 @@ input, textarea{
         width: 450px;
         font-size: 18px;
     }  
+    
 }
 
 @media(width >= 800px) {
@@ -71,6 +133,14 @@ input, textarea{
     form {
         gap: 40px;
     }
+
+    .contactInfo {
+        max-width: 520px;
+        gap: 10px;
+        height: 50px;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
 }
 
 @media(width >= 1400px) {
@@ -78,3 +148,4 @@ input, textarea{
         width: 800px;
     }
 }
+

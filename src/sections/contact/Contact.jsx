@@ -1,11 +1,34 @@
 import React, { useEffect } from "react";
 import styles from "./ContactStyles.module.css";
+import phoneLight from "../../assets/phoneLight.png";
+import phoneDark from "../../assets/phoneDark.png";
+import emailLight from "../../assets/emailLight.png";
+import emailDark from "../../assets/emailDark.png";
+import { useTheme } from "../../common/ThemeContext";
 
 function Contact() {
+  const { theme } = useTheme();
+
+  const phone = theme === "light" ? phoneLight : phoneDark;
+  const email = theme === "light" ? emailDark : emailLight;
+
+  const emailID = "atulgupta0824@gmail.com";
   return (
     <section id="contact" className={styles.container}>
       <h1 className="sectionTitle">Contact</h1>
-      <form action="">
+      <span className={styles.contactInfo}>
+        <span className={styles.phone}>
+          <img src={phone} alt="Phone" />
+          <p>8285833862</p>
+        </span>
+        <span className={styles.email}>
+          <img src={email} alt="Email" />
+          <p className={styles.emaiInfo}>
+            <a href={`mailto:${emailID}`}>atulgupta0824@gmail.com</a>
+          </p>
+        </span>
+      </span>
+      <form action="https://formspree.io/f/mpwajgvl" method="POST">
         <div className="formGroup">
           <label htmlFor="name" hidden>
             Name
