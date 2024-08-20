@@ -2,21 +2,34 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
+}
 
-    .skillsContainer {
-        display: flex;
-        align-items: center;
-        gap: 40px;
-    }
+.skillsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 40px;
+    line-height: 2;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 75ch;
+}
 
-    span {
-        display: flex;
-        align-items: center;
-        gap: 4px;
+hr {
+    width: 100%;
+    max-width: 15rem;
+    margin: 15px 0;
+}
 
-        img {
-            width: 20px;
-            height: 20px;
-        }
-    }
+span {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.skillsContainer img {
+    width: 20px;
+    height: 20px;
 }
