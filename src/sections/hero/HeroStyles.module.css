@@ -53,6 +53,12 @@
   .emaiInfo a {
       color: #fff;
   }
+
+  .bottomContainer {
+    .contactInfo {
+      border: #fff 1px solid;
+    }
+  }
 }
 
 .topContainer {
