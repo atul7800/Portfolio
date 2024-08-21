@@ -6,62 +6,7 @@
   gap: 20px;
   text-align: center;
   height: 100vh;
-  min-height: 500px; 
-}
-
-.bottomContainer{
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 100%;
-
-  .contactInfo {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 20px;
-    width: 100%;
-    border: #222 1px solid;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 20px;
-    
-    span {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 7px;
-    }
-  }
-
-  .contactInfo .phone img, .contactInfo .email img {
-    width: 22px;
-    height: 22px;
-  }
-
- 
-}
-
-
-.emaiInfo a {
-  color: #222;
-}
-
-[data-theme="dark"]{
-  .emaiInfo a {
-      color: #fff;
-  }
-}
-
-.topContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  text-align: center;
+  min-height: 500px;
 
   .hero {
     max-width: 200px;
@@ -138,25 +83,8 @@
   gap: 25px;
 }
 
-
-
-@media(width <= 500px) {
-  .contactInfo {  
-    flex-direction: column;
-  }
-}
-
-@media only screen and (min-width: 501px) and (max-width: 799px) {
-  .bottomContainer{
-    .contactInfo {  
-      gap: 5px;
-    }
-  }
- 
-}
-
 @media(width >= 800px) {
-  .topContainer {
+  .container {
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-evenly;
@@ -168,11 +96,10 @@
       max-width: 350px;
     }
   }
-
 }
 
 @media(width >= 1400px) {
-  .topContainer {
+  .container {
     gap: 75px;
 
     .hero {
