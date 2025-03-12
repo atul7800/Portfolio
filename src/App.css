@@ -6,6 +6,7 @@
   --text-color: #222;
   --form-text-color: #555;
   --footer-text-color: #888;
+  --project-card-bg2:"#ffffb3"
 }
 
 [data-theme="dark"] {

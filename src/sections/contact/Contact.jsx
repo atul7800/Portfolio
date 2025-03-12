@@ -12,11 +12,10 @@ function Contact() {
   const phone = theme === "light" ? phoneLight : phoneDark;
   const email = theme === "light" ? emailDark : emailLight;
 
-  const emailID = "atulgupta0824@gmail.com";
   return (
     <section id="contact" className={styles.container}>
       <h1 className="sectionTitle">Contact</h1>
-      <form action="https://formspree.io/f/mpwajgvl" method="POST">
+      <form action="https://formspree.io/f/moveqpwp" method="POST">
         <div className="formGroup">
           <label htmlFor="name" hidden>
             Name

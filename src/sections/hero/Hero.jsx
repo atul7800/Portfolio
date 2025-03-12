@@ -15,13 +15,13 @@ import emailDark from "../../assets/emailDark.png";
 
 function Hero() {
   const { theme, toggleTheme } = useTheme();
-  const themeIcon = theme === "light" ? sun : moon;
+  const themeIcon = theme === "light" ? moon : sun;
   const githubIcon = theme === "light" ? githubLight : githubDark;
   const linkedinIcon = theme === "light" ? linkedinLight : linkedinDark;
   const phone = theme === "light" ? phoneDark : phoneLight;
   const email = theme === "light" ? emailLight : emailDark;
   const resumeLink =
-    "https://drive.google.com/uc?export=download&id=1nGEEh8tA2hNPLztR0hLrWT2eJdXjQ0cO";
+    "https://drive.google.com/file/d/1cHDtPhP3byiwMQLJgpiYcZ1a7bhCn8FR/view?usp=sharing";
 
   const emailID = "atulgupta0824@gmail.com";
 
@@ -68,9 +68,9 @@ function Hero() {
             businesses.
           </p>
 
-          {/* <a href={resumeLink}>
+          <a href={resumeLink}>
             <button className="hover">Resume</button>
-          </a> */}
+          </a>
         </div>
       </div>
       <div className={styles.bottomContainer}>
