@@ -82,7 +82,7 @@ function Hero() {
           <span className={styles.email}>
             <img src={email} alt="Email" />
             <p className={styles.emaiInfo}>
-              <a href={`mailto:${emailID}`}>atulgupta0824@gmail.com</a>
+              <a style={{textDecoration:'none'}} href={`mailto:${emailID}`}>atulgupta0824@gmail.com</a>
             </p>
           </span>
         </span>
