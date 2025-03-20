@@ -4,6 +4,8 @@ import letmelogo from "../../assets/letmelogo.png";
 import techtalkcentral from "../../assets/techtalkcentral.png";
 import aqsat from "../../assets/aqsat.png";
 import visionintelligence from "../../assets/visionintelligence.png"
+import aha from "../../assets/aha.png"
+import aha_logo from "../../assets/aha_logo.png"
 import ProjectCard from "../../common/ProjectCard";
 
 function Projects() {
@@ -23,6 +25,12 @@ function Projects() {
           name="VisionIntelligence"
           descrption="Ticketing platform"
           image={visionintelligence}
+        />
+        <ProjectCard
+          url="https://elearning.heart.org/"
+          name="HIT"
+          descrption="E-Learning Platform"
+          image={aha_logo}
         />
         <ProjectCard
           url="https://letmelogo.vercel.app/"
