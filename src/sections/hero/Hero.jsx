@@ -68,15 +68,9 @@ function Hero() {
             businesses.
           </p>
 
-          {/* <a href={resumeLink}>
+          <a href={resumeLink} target="_blank" rel="noopener noreferrer">
             <button className="hover">Resume</button>
-          </a> */}
-          <button
-            onClick={() => window.open(resumeLink, "_blank")}
-            className="hover"
-          >
-            Resume
-          </button>
+          </a>
         </div>
       </div>
       <div className={styles.bottomContainer}>
