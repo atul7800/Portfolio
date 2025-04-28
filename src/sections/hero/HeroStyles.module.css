@@ -6,10 +6,10 @@
   gap: 20px;
   text-align: center;
   height: 100vh;
-  min-height: 500px; 
+  min-height: 500px;
 }
 
-.bottomContainer{
+.bottomContainer {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -27,7 +27,7 @@
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 20px;
-    
+
     span {
       display: flex;
       align-items: center;
@@ -36,22 +36,20 @@
     }
   }
 
-  .contactInfo .phone img, .contactInfo .email img {
+  .contactInfo .phone img,
+  .contactInfo .email img {
     width: 22px;
     height: 22px;
   }
-
- 
 }
-
 
 .emaiInfo a {
   color: #222;
 }
 
-[data-theme="dark"]{
+[data-theme="dark"] {
   .emaiInfo a {
-      color: #fff;
+    color: #fff;
   }
 
   .bottomContainer {
@@ -144,10 +142,8 @@
   gap: 25px;
 }
 
-
-
-@media(width <= 500px) {
-  .contactInfo {  
+@media (width <= 500px) {
+  .contactInfo {
     flex-direction: column;
   }
 
@@ -160,7 +156,7 @@
   }
 }
 
-@media(width <= 600px) {
+@media (width <= 600px) {
   .bottomContainer {
     .contactInfo {
       margin-left: 15px;
@@ -170,15 +166,14 @@
 }
 
 @media only screen and (min-width: 501px) and (max-width: 799px) {
-  .bottomContainer{
-    .contactInfo {  
+  .bottomContainer {
+    .contactInfo {
       gap: 5px;
     }
   }
- 
 }
 
-@media(width >= 800px) {
+@media (width >= 800px) {
   .topContainer {
     flex-direction: row-reverse;
     align-items: center;
@@ -191,10 +186,9 @@
       max-width: 350px;
     }
   }
-
 }
 
-@media(width >= 1400px) {
+@media (width >= 1400px) {
   .topContainer {
     gap: 75px;
 
