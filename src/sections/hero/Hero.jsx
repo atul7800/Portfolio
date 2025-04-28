@@ -1,5 +1,5 @@
 import styles from "./HeroStyles.module.css";
-import heroImg from "../../assets/hero-img.jpg";
+import heroImg from "../../assets/hero-img.png";
 import sun from "../../assets/sun.svg";
 import moon from "../../assets/moon.svg";
 import githubLight from "../../assets/github-light.svg";
@@ -29,11 +29,27 @@ function Hero() {
     <section className={styles.container} id="hero">
       <div className={styles.topContainer}>
         <div className={styles.coloModeContainer}>
-          <img
+          <div
             className={styles.hero}
-            src={heroImg}
-            alt="Profule picture of Atul"
-          />
+            style={{
+              border: theme === "dark" ? "2px solid white" : "2px solid black",
+              boxShadow:
+                theme === "dark"
+                  ? "0px 10px 15px -5px rgba(255, 255, 255, 0.2)"
+                  : "0px 10px 15px -5px rgba(0, 0, 0, 0.3)",
+            }}
+          >
+            <img
+              src={heroImg}
+              alt="Profile picture of Atul"
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "contain",
+                borderRadius: "50%",
+              }}
+            />
+          </div>
 
           <img
             onClick={toggleTheme}
