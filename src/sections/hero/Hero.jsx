@@ -6,7 +6,6 @@ import githubLight from "../../assets/github-light.svg";
 import githubDark from "../../assets/github-dark.svg";
 import linkedinLight from "../../assets/linkedin-light.svg";
 import linkedinDark from "../../assets/linkedin-dark.svg";
-import CV from "../../assets/Atul Gupta_SD_resume.pdf";
 import { useTheme } from "../../common/ThemeContext";
 import phoneLight from "../../assets/phoneLight.png";
 import phoneDark from "../../assets/phoneDark.png";
@@ -20,8 +19,9 @@ function Hero() {
   const linkedinIcon = theme === "light" ? linkedinLight : linkedinDark;
   const phone = theme === "light" ? phoneDark : phoneLight;
   const email = theme === "light" ? emailLight : emailDark;
-  const resumeLink =
-    "https://drive.google.com/file/d/1cHDtPhP3byiwMQLJgpiYcZ1a7bhCn8FR/view?usp=sharing";
+  // const resumeLink =
+  //   "https://drive.google.com/file/d/1cHDtPhP3byiwMQLJgpiYcZ1a7bhCn8FR/view?usp=sharing";
+  const resumeLink = "/Atul_Gupta_Resume_Frontend_Developer.pdf";
 
   const emailID = "atulgupta0824@gmail.com";
 
@@ -68,9 +68,15 @@ function Hero() {
             businesses.
           </p>
 
-          <a href={resumeLink}>
+          {/* <a href={resumeLink}>
             <button className="hover">Resume</button>
-          </a>
+          </a> */}
+          <button
+            onClick={() => window.open(resumeLink, "_blank")}
+            className="hover"
+          >
+            Resume
+          </button>
         </div>
       </div>
       <div className={styles.bottomContainer}>
@@ -82,7 +88,9 @@ function Hero() {
           <span className={styles.email}>
             <img src={email} alt="Email" />
             <p className={styles.emaiInfo}>
-              <a style={{textDecoration:'none'}} href={`mailto:${emailID}`}>atulgupta0824@gmail.com</a>
+              <a style={{ textDecoration: "none" }} href={`mailto:${emailID}`}>
+                atulgupta0824@gmail.com
+              </a>
             </p>
           </span>
         </span>
