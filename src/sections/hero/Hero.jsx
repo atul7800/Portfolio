@@ -20,8 +20,7 @@ function Hero() {
   const linkedinIcon = theme === "light" ? linkedinLight : linkedinDark;
   const phone = theme === "light" ? phoneDark : phoneLight;
   const email = theme === "light" ? emailLight : emailDark;
-  const resumeLink =
-    "https://drive.google.com/file/d/1-q94zcANl4M3tyt4lYVYAMT4S_P6mxGy/view?usp=sharing";
+  const resumeLink ="https://drive.google.com/file/d/1-q94zcANl4M3tyt4lYVYAMT4S_P6mxGy/view?usp=sharing";
 
   const emailID = "atulgupta0824@gmail.com";
 
