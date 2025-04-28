@@ -6,8 +6,9 @@ function Skills() {
     <section id="skills" className={styles.container}>
       <h1 className="sectionTitle">SKILLS</h1>
       <div className={styles.skillsContainer}>
-        <SkillList skill="Javascript" />
         <SkillList skill="React.js" />
+        <SkillList skill="JavaScript" />
+        <SkillList skill="TypeScript" />
         <SkillList skill="React Router" />
         <SkillList skill="Context API" />
         <SkillList skill="Redux" />
