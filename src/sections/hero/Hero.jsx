@@ -11,6 +11,8 @@ import phoneLight from "../../assets/phoneLight.png";
 import phoneDark from "../../assets/phoneDark.png";
 import emailLight from "../../assets/emailLight.png";
 import emailDark from "../../assets/emailDark.png";
+//import proresume_logo from "../../assets/proresume_logo.png";
+import proresume_logo from "../../assets/proresume_logo.svg";
 
 function Hero() {
   const { theme, toggleTheme } = useTheme();

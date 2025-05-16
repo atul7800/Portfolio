@@ -1,11 +1,12 @@
 import React from "react";
 import styles from "./ProjectsStyles.module.css";
+import proresume_logo from "../../assets/proresume_logo.svg";
 import letmelogo from "../../assets/letmelogo.png";
 import techtalkcentral from "../../assets/techtalkcentral.png";
 import aqsat from "../../assets/aqsat.png";
-import visionintelligence from "../../assets/visionintelligence.png"
-import aha from "../../assets/aha.png"
-import aha_logo from "../../assets/aha_logo.png"
+import visionintelligence from "../../assets/visionintelligence.png";
+import aha from "../../assets/aha.png";
+import aha_logo from "../../assets/aha_logo.png";
 import ProjectCard from "../../common/ProjectCard";
 
 function Projects() {
@@ -18,7 +19,6 @@ function Projects() {
           name="AQSAT"
           descrption="Rent now, Pay later"
           image={aqsat}
-          
         />
         <ProjectCard
           url="https://visionintelligenceblackhat20232-422656-react.b422656.dev.eastus.az.svc.builder.cafe/"
@@ -31,6 +31,12 @@ function Projects() {
           name="HIT"
           descrption="E-Learning Platform"
           image={aha_logo}
+        />
+        <ProjectCard
+          url="https://pro-resume-frontend.vercel.app/"
+          name="ProResume"
+          descrption="AI Resume Builder"
+          image={proresume_logo}
         />
         <ProjectCard
           url="https://letmelogo.vercel.app/"
