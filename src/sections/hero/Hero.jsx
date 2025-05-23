@@ -76,7 +76,7 @@ function Hero() {
             >
               <img src={githubIcon} alt="Github icon" />
             </a>
-            <a href="http://www.linkedin.com/in/atul-gupta24/" target="_blank">
+            <a href="https://www.linkedin.com/in/atul24" target="_blank">
               <img src={linkedinIcon} alt="Linkedin icon" />
             </a>
           </span>
