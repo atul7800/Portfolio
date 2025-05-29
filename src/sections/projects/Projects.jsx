@@ -3,6 +3,7 @@ import styles from "./ProjectsStyles.module.css";
 import proresume_logo from "../../assets/proresume_logo.svg";
 import letmelogo from "../../assets/letmelogo.png";
 import techtalkcentral from "../../assets/techtalkcentral.png";
+import skyview from "../../assets/skyview.png";
 import aqsat from "../../assets/aqsat.png";
 import visionintelligence from "../../assets/visionintelligence.png";
 import aha from "../../assets/aha.png";
@@ -49,6 +50,12 @@ function Projects() {
           name="TechTalkCentral"
           descrption="Blog Website"
           image={techtalkcentral}
+        />
+        <ProjectCard
+          url="https://sky-view-wheat.vercel.app/"
+          name="SkyView"
+          descrption="Weather App"
+          image={skyview}
         />
       </div>
     </section>
