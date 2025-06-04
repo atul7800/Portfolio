@@ -12,11 +12,13 @@ function Skills() {
         <SkillList skill="React Router" />
         <SkillList skill="Context API" />
         <SkillList skill="Redux" />
+        <SkillList skill="Jest" />
+        <SkillList skill="Next.js" />
       </div>
       <hr />
       <div className={styles.skillsContainer}>
-        <SkillList skill="HTML" />
-        <SkillList skill="CSS" />
+        <SkillList skill="HTML5" />
+        <SkillList skill="CSS3" />
         <SkillList skill="Bootstrap" />
         <SkillList skill="Tailwind CSS" />
         <SkillList skill="MUI" />
@@ -30,6 +32,7 @@ function Skills() {
         <SkillList skill="JSON" />
         <SkillList skill="Strapi CMS" />
         <SkillList skill="Git" />
+        <SkillList skill="WCAG" />
       </div>
     </section>
   );
