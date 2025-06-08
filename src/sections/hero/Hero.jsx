@@ -86,9 +86,9 @@ function Hero() {
             businesses.
           </p>
 
-          <a href={resumeLink} target="_blank" rel="noopener noreferrer">
+          {/* <a href={resumeLink} target="_blank" rel="noopener noreferrer">
             <button className="hover">Resume</button>
-          </a>
+          </a> */}
         </div>
       </div>
       <div className={styles.bottomContainer}>
